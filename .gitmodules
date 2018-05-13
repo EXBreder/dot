@@ -1,3 +1,4 @@
 [submodule ".zprezto"]
 	path = .zprezto
 	url = https://github.com/EXBreder/prezto
+	branch = master
