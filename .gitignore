@@ -1,3 +1,5 @@
 \.zhistory
 .zcompdump
 .zcompcache
+.zcompdump.zwc
+*~

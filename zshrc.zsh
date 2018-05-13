@@ -1,10 +1,8 @@
 setopt EXTENDED_GLOB
-export ZDOTDIR=~/dot
-source "${ZDOTDIR:-$HOME}/.zshrc"
-
+ZDOTDIR=~/dot source ~/dot/.zprezto/init.zsh
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/code
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/pypy3
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 source /usr/local/bin/virtualenvwrapper.sh
 alias emacs="emacs -nw"
 
