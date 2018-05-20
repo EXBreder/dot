@@ -6,6 +6,7 @@ export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 source /usr/local/bin/virtualenvwrapper.sh
 alias emacs="emacs -nw"
 
-if [ $commands[kubectl] ]; then
-  source <(kubectl completion zsh)
-fi
+# kubectl completion is really slow to initialize
+#if [ $commands[kubectl] ]; then
+#  source <(kubectl completion zsh)
+#fi
