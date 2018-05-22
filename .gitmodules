@@ -1,4 +1,4 @@
 [submodule ".zprezto"]
 	path = .zprezto
-	url = git@github.com:EXBreder/dot.git
+	url = https://github.com/EXBreder/prezto
 	branch = master
