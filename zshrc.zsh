@@ -11,6 +11,7 @@ export EDITOR="emacs"
 alias emacs="emacs -nw"
 alias dc="docker-compose"
 
+unalias rm
 
 # kubectl completion is really slow to initialize
 #if [ $commands[kubectl] ]; then
