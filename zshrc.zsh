@@ -4,8 +4,11 @@ export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/code
 
 # Doesn't work on non osx
-# export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
-# source /usr/local/bin/virtualenvwrapper.sh
+
+if [ "$(uname)" == "Darwin" ]; then
+    export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+    source /usr/local/bin/virtualenvwrapper.sh
+fi
 
 export EDITOR="emacs"
 alias emacs="emacs -nw"
@@ -22,3 +25,4 @@ unalias rm
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator virtualenv)
 DEFAULT_USER=$USER
+
