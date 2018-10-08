@@ -5,16 +5,16 @@ export PROJECT_HOME=$HOME/code
 
 # Doesn't work on non osx
 
-if [ "$(uname)" == "Darwin" ]; then
-    export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
-    source /usr/local/bin/virtualenvwrapper.sh
+if [ "$(uname)" '==' "Darwin" ]; then
+    if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then 
+	export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+	source /usr/local/bin/virtualenvwrapper.sh
+    fi
 fi
 
 export EDITOR="emacs"
 alias emacs="emacs -nw"
 alias dc="docker-compose"
-
-unalias rm
 
 # kubectl completion is really slow to initialize
 #if [ $commands[kubectl] ]; then
